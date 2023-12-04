@@ -28,29 +28,30 @@ In this example, if you were to follow the strategy guide, you would get a total
 """
 
 file=open('Day-2.txt')
-
 count=0
 for i in file.readlines():
     value=i.split('\n')[0]
     num=0
-    if(value[0] =="A" and value[1]=="Y"):
+    if(value[0]=="A" and value[2]=="Y"):
         num=8
-    elif(value[0] =="A" and value[1]=="X"):
+    elif(value[0]=="A" and value[2]=="X"):
         num=4 
-    elif(value[0] =="A" and value[1]=="Z"):
+    elif(value[0]=="A" and value[2]=="Z"):
         num=3  
-    elif(value[0] =="B" and value[1]=="Y"):
+    elif(value[0]=="B" and value[2]=="Y"):
         num=5  
-    elif(value[0] =="B" and value[1]=="X"):
+    elif(value[0]=="B" and value[2]=="X"):
         num=1  
-    elif(value[0] =="B" and value[1]=="Z"):
+    elif(value[0]=="B" and value[2]=="Z"):
         num=9  
-    elif(value[0] =="C" and value[1]=="Y"):
+    elif(value[0]=="C" and value[2]=="Y"):
         num=2
-    elif(value[0] =="C" and value[1]=="X"):
+    elif(value[0]=="C" and value[2]=="X"):
         num= 7
-    elif(value[0] =="C" and value[1]=="Z"):
-        num=6      
+    elif(value[0]=="C" and value[2]=="Z"):
+        num=6
+    elif(value[0]==''):
+        break
     count+=num
 
 print(count)
