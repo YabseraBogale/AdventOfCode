@@ -36,19 +36,19 @@ for i in file.readlines():
     if(value[0] =="A" and value[1]=="Y"):
         num=8
     elif(value[0] =="A" and value[1]=="X"):
-        pass  
+        num=4 
     elif(value[0] =="A" and value[1]=="Z"):
-        pass  
+        num=3  
     elif(value[0] =="B" and value[1]=="Y"):
-        pass  
+        num=5  
     elif(value[0] =="B" and value[1]=="X"):
         num=1  
     elif(value[0] =="B" and value[1]=="Z"):
-        pass  
+        num=9  
     elif(value[0] =="C" and value[1]=="Y"):
-        pass
+        num=2
     elif(value[0] =="C" and value[1]=="X"):
-        pass  
+        num= 7
     elif(value[0] =="C" and value[1]=="Z"):
         num=6      
     count+=num
